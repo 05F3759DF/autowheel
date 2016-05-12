@@ -120,7 +120,6 @@ bool DECOFUNC(processMultiDrainData)(void * paramsPtr, void * varsPtr, QVector<Q
         painter.setBackground(QBrush(QColor(241,241,241)));
         painter.eraseRect(0,0, vars->width, vars->height);
 
-
          if(joystick_data->forward)
             painter.drawImage(vars->width/2-16, vars->height/2-56, vars->forwardArrowImg);
 
@@ -132,7 +131,6 @@ bool DECOFUNC(processMultiDrainData)(void * paramsPtr, void * varsPtr, QVector<Q
 
         if(joystick_data->back)
             painter.drawImage(vars->width/2-16, vars->height/2+24, vars->backArrowImg);
-
         painter.end();
 
         vars->label->setPixmap(QPixmap::fromImage(image));

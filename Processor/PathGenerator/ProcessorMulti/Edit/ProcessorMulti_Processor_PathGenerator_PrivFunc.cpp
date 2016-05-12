@@ -163,7 +163,7 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
     outputPortIndex=QList<int>();
     if(inputdata_0.size()==0){return 0;}
     if(inputdata_1.size()==0){return 0;}
-    if(inputdata_2.size()==0){return 0;}
+    // if(inputdata_2.size()==0){return 0;}
     /*======Please Program below======*/
     /*
     Step 1: process inputdata_index, then store it into outputdata.
@@ -183,7 +183,7 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
     }
     else
     {
-#if 0
+#if 1
         ///使用惯导编码器定位
         x = outputdata->startPoint.x = inputdata_0.front()->x;
         y = outputdata->startPoint.y = inputdata_0.front()->y;

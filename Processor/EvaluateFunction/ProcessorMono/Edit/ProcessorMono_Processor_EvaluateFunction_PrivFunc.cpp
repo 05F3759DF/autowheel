@@ -35,14 +35,6 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
     GetParamValue(xmlloader, vars, param.bigNum);
     GetParamValue(xmlloader, vars, param.filePath);
     GetParamValue(xmlloader, vars, param.fileName);
-
-    if ( !vars->VF.SetParameter(vars->param) )
-        return false ;
-    if ( !vars->VF.ReadRawData() )
-        return false ;
-    if ( !vars->VF.ProcessRawData() )
-        return false ;
-
     return true ;
 }
 
@@ -122,15 +114,10 @@ bool DECOFUNC(processMonoInputData)(void * paramsPtr, void * varsPtr, QVector<vo
     E.g. outputPortIndex=QList<int>()<<(outportindex1)<<(outportindex2)...
     */
 
-    double res = 0 ;
-    res = vars->VF.valueFeature(inputdata.front()->feature) ;
-    if ( res <= 0 ) res = 0.1 ;
-    if ( res >= 1 ) res = 0.9 ;
-    outputdata->index = floor((res)*36.0) ;
     outputdata->timestamp = inputdata.front()->feature.timestamp ;
-    //outputdata->index = 18;
+    outputdata->index = 18;
     //for Test
-    outputdata->index += 4;
+//    outputdata->index += 4;
 
     // Debug
     int TS = inputdata.front()->feature.timestamp ;
@@ -149,15 +136,6 @@ bool DECOFUNC(processMonoInputData)(void * paramsPtr, void * varsPtr, QVector<vo
             outputdata->urg_data_point[i][j][1] = feature->urg_data_point[i][j][1];
         }
     }
-    for(int i=0; i< SIZE_OF_FEATURE/2; i++)
-    {
-        outputdata->is_door_open[i] = feature->is_door_open[i];
-    }
-    outputdata->door_point = feature->door_point;
-
-    outputdata->d2leftwall = feature->d2leftwall;
-    outputdata->d2rightwall = feature->d2rightwall;
-
     return 1;
 }
 

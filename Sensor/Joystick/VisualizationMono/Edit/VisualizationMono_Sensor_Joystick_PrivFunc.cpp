@@ -107,7 +107,7 @@ bool DECOFUNC(processMonoDrainData)(void * paramsPtr, void * varsPtr, QVector<vo
 
     painter.eraseRect(0,0, vars->width, vars->height);
 
-     if(joystick_data->forward)
+    if(joystick_data->forward)
         painter.drawImage(vars->width/2-16, vars->height/2-56, vars->forwardArrowImg);
 
     if(joystick_data->left)
@@ -122,7 +122,7 @@ bool DECOFUNC(processMonoDrainData)(void * paramsPtr, void * varsPtr, QVector<vo
     painter.end();
 
     vars->joystick_label->setPixmap(QPixmap::fromImage(image));
-	return 1;
+    return 1;
 }
 
 void DECOFUNC(visualizationWidgets)(void * paramsPtr, void * varsPtr, QList<QWidget *> & widgets)

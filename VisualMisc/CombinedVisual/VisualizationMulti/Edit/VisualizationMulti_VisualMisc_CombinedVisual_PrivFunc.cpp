@@ -100,7 +100,6 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
     vars->drawCar(pos);
 
     vars->glviewer->update();
-    //
 
 	return 1;
 }
@@ -265,75 +264,9 @@ bool DECOFUNC(processMultiDrainData)(void * paramsPtr, void * varsPtr, QVector<Q
     {
         temp_x[i]=ella*cos(2*i*PI/N );  //pathdata->front_center.x + pathdata->back_center.x
         temp_y[i]=ellb*sin(2*i*PI/N );
-//        temp_y[i]=sqrt((pathdata->size/2)*(pathdata->size/2) - distance_of_center*distance_of_center)*sin(2*i*PI/N + pathdata->angle);
         rotate(temp_x[i],temp_y[i],-pathdata->angle);
-       // glVertex2f(temp_x[i]+center_x,temp_y[i]+center_y);
     }
     glEnd();
-
-    //画门位置
-    glColor3f(0,1,0);
-    glPointSize(6);
-    glBegin(GL_POINTS);
-    for(int j=0; j < feature->door_point.size() ; j++)
-    {
-        glVertex3f(feature->door_point[j].x, feature->door_point[j].y, 0);
-    }
-    glEnd();
-
-    glColor3f(1,0,0);
-//    for(int j=0; j < feature->door_point.size() ; j++)
-//    {
-//        if(feature->is_door_open[j] == 1)
-//        {
-//            vars->glviewer->renderText(feature->door_point[j].x ,feature->door_point[j].y,0, "Open");
-//        }
-//        else if(feature->is_door_open[j] == 0)
-//        {
-//            vars->glviewer->renderText(feature->door_point[j].x ,feature->door_point[j].y,0, "open");
-//        }
-//        else if(feature->is_door_open[j] == 2)
-//        {
-//            vars->glviewer->renderText(feature->door_point[j].x ,feature->door_point[j].y,0, "Blocked");
-//        }
-//        else if(feature->is_door_open[j] == 3)
-//        {
-//            vars->glviewer->renderText(feature->door_point[j].x ,feature->door_point[j].y,0, "Unknown");
-//        }
-//    }
-    //画墙的标注位置
-//    glColor3f(0,0.5,0);
-//    glLineWidth(1);
-//    glBegin(GL_LINE_STRIP);
-//    glVertex3f(feature->leftWall.start.x,feature->leftWall.start.y,0);
-//    glVertex3f(feature->leftWall.end.x, feature->leftWall.end.y, 0);
-//    glEnd();
-//    glBegin(GL_LINE_STRIP);
-//    glVertex3f(feature->rightWall.start.x,feature->rightWall.start.y,0);
-//    glVertex3f(feature->rightWall.end.x, feature->rightWall.end.y, 0);
-//    glEnd();
-    //画墙检测位置
-//    glColor3f(0,0.5,1);
-//    glLineWidth(1);
-//    glBegin(GL_LINE_STRIP);
-//    glVertex3f(feature->wall_detect_point[0].x,feature->wall_detect_point[0].y,0);
-//    glVertex3f(feature->wall_detect_point[1].x, feature->wall_detect_point[1].y, 0);
-//    glEnd();
-//    glBegin(GL_LINE_STRIP);
-//    glVertex3f(feature->wall_detect_point[2].x,feature->wall_detect_point[2].y,0);
-//    glVertex3f(feature->wall_detect_point[3].x, feature->wall_detect_point[3].y, 0);
-//    glEnd();
-
-
-//    //画障礙物点
-//    glColor3f(0,0,1);
-//    glPointSize(4);
-//    glBegin(GL_POINTS);
-//    for(int j=0; j < pathdata->front_barrier.size() ; j++)
-//    {
-//        glVertex3f(pathdata->front_barrier[j].x, pathdata->front_barrier[j].y, 0);
-//    }
-//    glEnd();
 
 
     //画所有的在线轨迹

@@ -51,9 +51,7 @@ public:
         endsimple_index = 4;
 
         manual_index = 5;
-
-
-
+        controlMode = 1;
 	}
 	/*! \fn ~SensorInternalEvent_Sensor_Joystick_Vars()
 		\brief The destructor of SensorInternalEvent_Sensor_Joystick_Vars. [required]
@@ -75,8 +73,8 @@ public:
     double angular_scale, linear_scale;
     int angular_index, linear_index, startsimple_index, endsimple_index, manual_index;
 
-    bool lastcontrolModel, currentcontrolmodel;
-    bool controlmodel;
+    bool lastControlMode, currentControlMode;
+    bool controlMode;
     //int counter;
 };
 

@@ -45,10 +45,11 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
 
      vars->x = vars->y = vars->yaw = 0;
 
-     vars->theta = M_PI/2; //初始化朝向，前方是y轴正方向，右方是x轴正方向-20150519
+     vars->theta = M_PI / 2; //初始化朝向，前方是y轴正方向，右方是x轴正方向-20150519
 
-     if(!(vars->serialport->open(QIODevice::ReadWrite)))
+     if(!(vars->serialport->open(QIODevice::ReadWrite))) {
          return 0;
+     }
 
      //send the transform
      ///odom ---> base_link
@@ -145,22 +146,22 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
          {
              QByteArray tmpdata = datagram.mid(startid+params->recv_packhead.size(), endid-(startid+params->recv_packhead.size()));
              vars->roll = *((short*)(tmpdata.data()));
-             vars->roll = vars->roll/10.0*M_PI/180.0;
+             vars->roll = vars->roll / 10.0 * M_PI / 180.0;
 
              vars->pitch = *((short*)(tmpdata.data() + sizeof(short)));
-             vars->pitch = vars->pitch/10.0*M_PI/180.0;
+             vars->pitch = vars->pitch / 10.0 * M_PI / 180.0;
 
-             vars->yaw = *((short*)(tmpdata.data() + 2*sizeof(short)));
-             //vars->yaw = vars->yaw/10.0*vars->pi/180.0;
+             vars->yaw = *((short*)(tmpdata.data() + 2 * sizeof(short)));
+             vars->yaw = vars->yaw / 10.0 * M_PI / 180.0;
 
-             vars->leftencoder = *((short*)(tmpdata.data() + 3*sizeof(short)));
-             vars->rightencoder = *((short*)(tmpdata.data() + 4*sizeof(short)));
+             vars->leftencoder = *((short*)(tmpdata.data() + 3 * sizeof(short)));
+             vars->rightencoder = *((short*)(tmpdata.data() + 4 * sizeof(short)));
              //第一次初始化数据
              if(vars->isinit)
              {
                  vars->lastleftencoder = vars->leftencoder;
                  vars->lastrightencoder = vars->rightencoder;
-                 vars->leftspeed = vars->rightspeed =0;
+                 vars->leftspeed = vars->rightspeed = 0;
                  vars->leftodom = vars->rightodom = 0;
                  vars->lastyaw = vars->yaw;
 
@@ -170,69 +171,48 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
                  vars->last_time = ros::Time::now();
 
                  vars->isinit = 0;
-                 return 0;
+                 return 1;
              }
-
-            ////left wheel
-             vars->deltaleft = -(vars->leftencoder-vars->lastleftencoder);
 
              double deltatime = (vars->current_time - vars->last_time).toSec();
 
-             if(vars->deltaleft < -params->maxpusle/2)
-             {
-                 vars->deltaleft += params->maxpusle;
-             }
-             else if(vars->deltaleft > params->maxpusle/2)
-             {
-                 vars->deltaleft -= params->maxpusle;
-             }
-             vars->deltaleft = vars->deltaleft*params->distPerPulse*params->ratio;
+             vars->deltaleft = deltatime *(vars->leftencoder + vars->lastleftencoder)  / 2 * params->distPerPulse;
              vars->leftodom += vars->deltaleft;
-             vars->leftspeed = vars->deltaleft/deltatime;
+             vars->leftspeed = vars->leftencoder;
              vars->lastleftencoder = vars->leftencoder;
 
-             ////right wheel,左右轮编码器差一个系数
-             vars->deltaright = (vars->rightencoder - vars->lastrightencoder);
-             if(vars->deltaright  < -params->maxpusle/2)
-             {
-                 vars->deltaright  += params->maxpusle;
-             }
-             else if(vars->deltaright  > params->maxpusle/2)
-             {
-                 vars->deltaright  -= params->maxpusle;
-             }
-             vars->deltaright  = vars->deltaright *params->distPerPulse;
+             vars->deltaright = deltatime *(vars->rightencoder + vars->rightencoder)  / 2 * params->distPerPulse;
              vars->rightodom += vars->deltaright ;
-             vars->rightspeed = vars->deltaright /deltatime;
+             vars->rightspeed = vars->rightencoder;
              vars->lastrightencoder = vars->rightencoder;
 
              ////使用编码器计算角度
              //vars->deltaEncodertheta = (vars->deltaright-vars->deltaleft)/params->WheelBase;
              ////使用IMU计算角度
-             vars->deltaIMUtheta = -(vars->yaw - vars->lastyaw)*M_PI/1800.0;
+             vars->deltaIMUtheta = -(vars->yaw - vars->lastyaw) * M_PI / 1800.0;
 
              vars->lastyaw = vars->yaw;
 
              ///IMU角度范围是 0~360
-             double max_angle = 2*M_PI;
-             if(vars->deltaIMUtheta > max_angle/2)
+             double max_angle = 2 * M_PI;
+             if(vars->deltaIMUtheta > max_angle / 2)
                  vars->deltaIMUtheta -= max_angle;
-             else if(vars->deltaIMUtheta < -max_angle/2)
+             else if(vars->deltaIMUtheta < -max_angle / 2)
                  vars->deltaIMUtheta += max_angle;
              ///使用那个角度？
              //vars->deltatheta = vars->deltaEncodertheta;
              vars->deltatheta = vars->deltaIMUtheta;
 
-             double deltaodom = (vars->deltaleft + vars->deltaright)/2;
-             double dx = deltaodom*cos(vars->theta + vars->deltatheta/2);
-             double dy = deltaodom*sin(vars->theta + vars->deltatheta/2);
+             double deltaodom = (vars->deltaleft + vars->deltaright) / 2;
+             double dx = deltaodom * cos(vars->theta + vars->deltatheta / 2);
+             double dy = deltaodom * sin(vars->theta + vars->deltatheta / 2);
              vars->x += dx;
              vars->y += dy;
 
              vars->theta += vars->deltatheta;
-             vars->vx = dx/deltatime;
-             vars->vy = dy/deltatime;
-             vars->vtheta = vars->deltatheta/deltatime;
+             vars->vx = dx / deltatime;
+             vars->vy = dy / deltatime;
+             vars->vtheta = vars->deltatheta / deltatime;
 
              //send the transform
              ///odom ---> base_link
@@ -246,10 +226,7 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
              odom_trans.transform.translation.y = vars->y;
              odom_trans.transform.translation.z = 0;
              odom_trans.transform.rotation = odom_quat;
-
              vars->odom_broadcaster.sendTransform(odom_trans);
-
-
 
              ///base_link ---> laser
              tf::Transform trans2;
@@ -259,45 +236,24 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
 
              vars->baselink2laser->sendTF(trans2);
 
-             //next, we'll publish the odometry message over ROS
-//             nav_msgs::Odometry odom;
-//             odom.header.stamp = vars->current_time;
-//             odom.header.frame_id = "odom";
-//             //set the position
-//             odom.pose.pose.position.x = vars->x;
-//             odom.pose.pose.position.y = vars->y;
-//             odom.pose.pose.position.z = 0.0;
-//             geometry_msgs::Quaternion odom_quat = tf::createQuaternionMsgFromYaw(vars->theta - M_PI/2.0);
-//             odom.pose.pose.orientation = odom_quat;
-//             //set the velocity
-//             odom.child_frame_id = "base_link";
-//             odom.twist.twist.linear.x = vars->vx;
-//             odom.twist.twist.linear.y = vars->vy;
-//             odom.twist.twist.angular.z = vars->vtheta;
-//             //publish the message
-//             vars->odompub->sendMessage(odom);
+            ///output data
+            outputdata->leftodom = vars->leftodom;
+            outputdata->rightodom = vars->rightodom;
+            outputdata->leftspeed = vars->leftspeed;
+            outputdata->rightspeed = vars->rightspeed;
+            outputdata->x = vars->x;
+            outputdata->y = vars->y;
+            outputdata->theta = vars->theta;
+            outputdata->yaw = vars->yaw;
+            outputdata->timestamp = currenttime;
+            vars->last_time = vars->current_time;
+        }
+    }
+    else
+    {
+        return 0;
+    }
 
-             ///output data
-             outputdata->leftodom = vars->leftodom;
-             outputdata->rightodom = vars->rightodom;
-             outputdata->leftspeed = vars->leftspeed;
-             outputdata->rightspeed = vars->rightspeed;
-             outputdata->x = vars->x;
-             outputdata->y = vars->y;
-             outputdata->theta = vars->theta;
-             outputdata->yaw = vars->yaw;
-             outputdata->timestamp = currenttime;
-
-             //Debug
-             //vars->speedFile<<vars->leftspeed<<'\t'<<vars->rightspeed<<std::endl;
-         }
-     }
-     else
-     {
-         return 0;
-     }
-
-     vars->last_time = vars->current_time;
     return 1;
 }
 
@@ -330,30 +286,18 @@ bool DECOFUNC(processMonoDrainData)(void * paramsPtr, void * varsPtr, QVector<vo
 	*/
     ProcessorMulti_Processor_Control_Data* inputdata = draindata.front();
 
-//    char dataput[8];
-//    char data_size = 5;
-//    dataput[0] = params->send_packhead.at(0);
-//    dataput[1] = data_size;
-//    *(short*)&dataput[2] = (short)inputdata->left_motor;
-//    *(short*)&dataput[4] = (short)inputdata->right_motor;
-//    dataput[6] = inputdata->isStop;
-//    dataput[7] = params->send_packtail.at(0);
-
-//    int n = vars->serialport->write(dataput, 8);
-
-
-    char dataput[7];
-    char data_size = 4;
+    char dataput[8];
+    char data_size = 5;
     dataput[0] = params->send_packhead.at(0);
     dataput[1] = data_size;
     *(short*)&dataput[2] = (short)inputdata->left_motor;
     *(short*)&dataput[4] = (short)inputdata->right_motor;
-//    *(short*)&dataput[2] = 0;
-//    *(short*)&dataput[4] = 0;
+    //控制左右灯, 0 - all off; 1 - left light on; 2 - right light on; 3 - all on;
+    *(short*)&dataput[6] = 0;
 
-    dataput[6] = params->send_packtail.at(0);
+    dataput[7] = params->send_packtail.at(0);
 
-    int n = vars->serialport->write(dataput, 7);
+    int n = vars->serialport->write(dataput, 8);
     if(n < 0)
     {
         return 0;

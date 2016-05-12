@@ -37,8 +37,9 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
     }
     vars->joysticksub->startReceiveSlot();
 
-    vars->lastcontrolModel = vars->currentcontrolmodel = 0;
-    vars->controlmodel = 1;
+    vars->lastControlMode = 0;
+    vars->currentControlMode = 1;
+    vars->controlMode = 1;
 
 	return 1;
 }
@@ -113,29 +114,30 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
     {
         return 0;
     }
-    outputdata->timestamp = QTime::fromMSecsSinceStartOfDay(msg->header.stamp.sec*1000 + msg->header.stamp.nsec/1000);
+    outputdata->timestamp = QTime::fromMSecsSinceStartOfDay(msg->header.stamp.sec * 1000 + msg->header.stamp.nsec / 1000);
+    outputdata->angular_vel = -msg->axes[ vars->angular_index];
+    outputdata->linear_vel = msg->axes[ vars->linear_index];
 
-    outputdata->angular_vel = -vars->angular_scale*msg->axes[vars->angular_index];
-    outputdata->linear_vel = vars->linear_scale*msg->axes[vars->linear_index];
     //可视化部分
-    outputdata->back = outputdata->linear_vel <0 ? 1 : 0;
-    outputdata->forward = outputdata->linear_vel >0 ? 1 : 0;
+    outputdata->back = outputdata->linear_vel <-0.5 ? 1 : 0;
+    outputdata->forward = outputdata->linear_vel >0.5 ? 1 : 0;
 
-    outputdata->left = outputdata->angular_vel <0 ? 1 : 0;
-    outputdata->right = outputdata->angular_vel >0 ? 1 : 0;
+    outputdata->left = outputdata->angular_vel <-0.5 ? 1 : 0;
+    outputdata->right = outputdata->angular_vel >0.5 ? 1 : 0;
+
     //数据采集指示
 
     outputdata->startsimple = msg->buttons[vars->startsimple_index];
     outputdata->endsimple = msg->buttons[vars->endsimple_index];
 /////////////////
-    vars->currentcontrolmodel = msg->buttons[vars->manual_index];
+    vars->currentControlMode = msg->buttons[vars->manual_index];
 
-    if(vars->currentcontrolmodel == 0 && vars->lastcontrolModel == 1)
-        vars->controlmodel = !vars->controlmodel; //1-manual control; 0-auto control;下降沿改变
+    if(vars->currentControlMode == 0 && vars->lastControlMode == 1)
+        vars->controlMode = !vars->controlMode; //1-manual control; 0-auto control;下降沿改变
 
-    vars->lastcontrolModel = vars->currentcontrolmodel;
+    vars->lastControlMode = vars->currentControlMode;
     //output
-    outputdata->manual_control = vars->controlmodel;
+    outputdata->manual_control = vars->controlMode;
 
 	return 1;
 }
