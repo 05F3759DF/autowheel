@@ -34,7 +34,7 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
 
     GetParamValue(xmlloader, vars, storagepath);
 
-    GetParamValue(xmlloader, vars, speedAcc);
+    GetParamValue(xmlloader, vars, speedAccplus);
 
     vars->lowSpeedThresh = vars->highSpeedThresh = params->lowSpeed;
     vars->assignedSpeed = 0;
@@ -145,97 +145,107 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
 
     if(joystickdata->manual_control == 1)
     {
-        vars->left_vel = joystickdata->linear_vel + vars->WheelBase*joystickdata->angular_vel/2;
-        vars->right_vel = joystickdata->linear_vel - vars->WheelBase*joystickdata->angular_vel/2;
-        left_motor = vars->left_vel * 10;
-        right_motor = vars->right_vel * 10;
+        vars->left_vel = joystickdata->linear_vel + vars->WheelBase * joystickdata->angular_vel / 2;
+        vars->right_vel = joystickdata->linear_vel - vars->WheelBase * joystickdata->angular_vel / 2;
+        left_motor = vars->left_vel * 20;
+        right_motor = vars->right_vel * 20;
         outputdata->left_vel = vars->left_vel;
         outputdata->right_vel = vars->right_vel;
+        outputdata->left_motor = left_motor;
+        outputdata->right_motor = right_motor;
+        outputdata->isManualControl = joystickdata->manual_control;
+        return 1;
     }
     else
     {
         ProcessorMulti_Processor_PathGenerator_Data* pathdata = inputdata_0.front();
         if(pathdata->stop == 1)
         {
-            vars->left_vel = joystickdata->linear_vel + vars->WheelBase*joystickdata->angular_vel/2;
-            vars->right_vel = joystickdata->linear_vel - vars->WheelBase*joystickdata->angular_vel/2;
-            outputdata->left_motor = vars->left_vel * 1376.9 + 214.5;
-            outputdata->right_motor = vars->right_vel * 1376.9 + 214.5;
+
+            vars->left_vel-=vars->speedAccminus;
+            vars->right_vel -=vars->speedAccminus;
+            if (vars->left_vel<0||vars->right_vel)
+                vars->left_vel = vars->right_vel = 0;
+            outputdata->left_motor = outputdata->right_motor = 0;
             outputdata->isManualControl = 1;
             outputdata->left_vel = vars->left_vel;
             outputdata->right_vel = vars->right_vel;
             return 1;
         }
+        else {
+            double hx = cos(pathdata->startPoint.theta);
+            double hy = sin(pathdata->startPoint.theta);
 
-        double hx = cos(pathdata->startPoint.theta);
-        double hy = sin(pathdata->startPoint.theta);
+            double tx = pathdata->targetPoint.x;
+            double ty = pathdata->targetPoint.y;
 
-        double tx = pathdata->targetPoint.x,ty=pathdata->targetPoint.y;
-
-        vars->lastSpeed = vars->assignedSpeed; //保存上次速度结果
-        switch (pathdata->speedState)
-        {
-        case ProcessorMulti_Processor_PathGenerator_Data::MID:
-            vars->assignedSpeed = params->midSpeed;
-            break;
-        case ProcessorMulti_Processor_PathGenerator_Data::LOW:
-            vars->assignedSpeed = params->lowSpeed;
-            break;
-        case ProcessorMulti_Processor_PathGenerator_Data::HIGH:
-            vars->assignedSpeed = params->highSpeed;
-            break;
-        default:
-            break;
-        }
-        //以固定的加速度来调节速度
-        if(vars->lastSpeed != vars->assignedSpeed)
-        {
-            if(vars->lastSpeed < vars->assignedSpeed)
+            vars->lastSpeed = vars->assignedSpeed; //保存上次速度结果
+            switch (pathdata->speedState)
             {
-                if(vars->speedAcc < 0) //加速过程，加速度大于0
-                    vars->speedAcc = -vars->speedAcc;
-                vars->lowSpeedThresh = vars->lastSpeed;
-                vars->highSpeedThresh = vars->assignedSpeed;
+            case ProcessorMulti_Processor_PathGenerator_Data::MID:
+                vars->assignedSpeed = params->midSpeed;
+                break;
+            case ProcessorMulti_Processor_PathGenerator_Data::LOW:
+                vars->assignedSpeed = params->lowSpeed;
+                break;
+            case ProcessorMulti_Processor_PathGenerator_Data::HIGH:
+                vars->assignedSpeed = params->highSpeed;
+                break;
+            default:
+                break;
+            }
+            //以固定的加速度来调节速度
+            if(vars->lastSpeed != vars->assignedSpeed)
+            {
+                if(vars->lastSpeed < vars->assignedSpeed)
+                {
+                    if(vars->speedAccplus < 0) //加速过程，加速度大于0
+                        vars->speedAccplus = -vars->speedAccplus;
+                    vars->lowSpeedThresh = vars->lastSpeed;
+                    vars->highSpeedThresh = vars->assignedSpeed;
+                }
+                else
+                {
+                    if(vars->speedAccminus > 0) //减速过程，加速度小于0
+                        vars->speedAccminus = -vars->speedAccminus;
+                    vars->lowSpeedThresh = vars->assignedSpeed;
+                    vars->highSpeedThresh = vars->lastSpeed;
+                }
+                vars->targetSpeed = vars->lastSpeed;
+            }
+            //以固定的加速度来调节速度
+            if((vars->lastSpeed < vars->assignedSpeed))
+                vars->targetSpeed = vars->targetSpeed + vars->speedAccplus;
+            else
+                vars->targetSpeed = vars->targetSpeed + vars->speedAccminus;
+
+            vars->targetSpeed = vars->targetSpeed > vars->highSpeedThresh ?
+                        vars->highSpeedThresh:vars->targetSpeed;
+
+            vars->targetSpeed = vars->targetSpeed < vars->lowSpeedThresh ?
+                        vars->lowSpeedThresh:vars->targetSpeed;
+
+            generateControlCmd(vars, pathdata->startPoint.x, pathdata->startPoint.y, hx, hy, tx, ty);
+
+            if(pathdata->speedState == ProcessorMulti_Processor_PathGenerator_Data::STOP)
+            {
+                left_motor = right_motor = (short)params->stopPWM;
+                outputdata->left_vel = outputdata->right_vel = 0;
             }
             else
             {
-                if(vars->speedAcc > 0) //减速过程，加速度小于0
-                    vars->speedAcc = -vars->speedAcc;
-                vars->lowSpeedThresh = vars->assignedSpeed;
-                vars->highSpeedThresh = vars->lastSpeed;
+                left_motor = vars->left_vel * 10+1;//左轮慢
+                right_motor = vars->right_vel * 10;
+                outputdata->left_vel = vars->left_vel;
+                outputdata->right_vel = vars->right_vel;
             }
-            vars->targetSpeed = vars->lastSpeed;
         }
-        //以固定的加速度来调节速度
-        vars->targetSpeed = vars->targetSpeed + vars->speedAcc;
 
-        vars->targetSpeed = vars->targetSpeed > vars->highSpeedThresh ?
-                    vars->highSpeedThresh:vars->targetSpeed;
-
-        vars->targetSpeed = vars->targetSpeed < vars->lowSpeedThresh ?
-                    vars->lowSpeedThresh:vars->targetSpeed;
-
-        generateControlCmd(vars, pathdata->startPoint.x, pathdata->startPoint.y, hx, hy, tx, ty);
-
-        if(pathdata->speedState == ProcessorMulti_Processor_PathGenerator_Data::STOP)
-        {
-            left_motor = right_motor = (short)params->stopPWM;
-            outputdata->left_vel = outputdata->right_vel = 0;
-        }
-        else
-        {
-            left_motor = vars->left_vel * 1376.9 + 214.5;
-            right_motor = vars->right_vel * 1376.9 + 214.5;
-
-            outputdata->left_vel = vars->left_vel;
-            outputdata->right_vel = vars->right_vel;
-        }
+        outputdata->left_motor = left_motor;
+        outputdata->right_motor = right_motor;
+        outputdata->isManualControl = joystickdata->manual_control;
+        return 1;
     }
-
-    outputdata->left_motor = left_motor;
-    outputdata->right_motor = right_motor;
-    outputdata->isManualControl = joystickdata->manual_control;
-
     //存轨迹集和选中的轨迹,用于模拟
 //    if(vars->isSaveTraj)
 //    {

@@ -50,7 +50,8 @@ public:
 
        targetSpeed= lastSpeed = lowSpeedThresh = highSpeedThresh = 0;
 
-        speedAcc = 0.02;
+        speedAccplus = 0.02;
+        speedAccminus=0.01;
 	}
 	/*! \fn ~ProcessorMulti_Processor_Control_Vars()
 		\brief The destructor of ProcessorMulti_Processor_Control_Vars. [required]
@@ -78,7 +79,7 @@ public:
 
     double lastSpeed, lowSpeedThresh, highSpeedThresh;
 
-    double speedAcc;
+    double speedAccplus,speedAccminus;
 
 };
 

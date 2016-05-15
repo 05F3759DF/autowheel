@@ -40,7 +40,6 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
     vars->lastControlMode = 0;
     vars->currentControlMode = 1;
     vars->controlMode = 1;
-
 	return 1;
 }
 

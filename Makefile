@@ -1017,7 +1017,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -1091,33 +1095,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -1128,10 +1105,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -1139,6 +1126,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -1146,25 +1134,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -1316,7 +1316,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -1390,33 +1394,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -1427,10 +1404,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -1438,6 +1425,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -1445,25 +1433,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -1615,7 +1615,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -1689,33 +1693,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -1726,10 +1703,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -1737,6 +1724,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -1744,25 +1732,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -1802,7 +1802,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -1876,33 +1880,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -1913,10 +1890,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -1924,6 +1911,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -1931,25 +1919,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -1989,7 +1989,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -2063,33 +2067,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -2100,10 +2077,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -2111,6 +2098,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -2118,25 +2106,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -2208,7 +2208,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -2282,33 +2286,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -2319,10 +2296,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -2330,6 +2317,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -2337,25 +2325,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -2427,7 +2427,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -2501,33 +2505,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -2538,10 +2515,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -2549,6 +2536,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -2556,25 +2544,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -2735,7 +2735,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -2809,33 +2813,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -2846,10 +2823,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -2857,6 +2844,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -2864,25 +2852,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -2956,7 +2956,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -3030,33 +3034,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -3067,10 +3044,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -3078,6 +3065,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -3085,25 +3073,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -3177,7 +3177,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -3251,33 +3255,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -3288,10 +3265,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -3299,6 +3286,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -3306,25 +3294,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -3395,7 +3395,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -3469,33 +3473,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -3506,10 +3483,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -3517,6 +3504,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -3524,25 +3512,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -3691,7 +3691,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -3765,33 +3769,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -3802,10 +3779,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -3813,6 +3800,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -3820,25 +3808,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -3909,7 +3909,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -3983,33 +3987,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -4020,10 +3997,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -4031,6 +4018,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -4038,25 +4026,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -4127,7 +4127,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -4201,33 +4205,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -4238,10 +4215,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -4249,6 +4236,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -4256,25 +4244,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -4346,7 +4346,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -4420,33 +4424,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -4457,10 +4434,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -4468,6 +4455,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -4475,25 +4463,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -4567,7 +4567,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -4641,33 +4645,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -4678,10 +4655,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -4689,6 +4676,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -4696,25 +4684,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -5002,7 +5002,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -5076,33 +5080,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -5113,10 +5090,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -5124,6 +5111,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -5131,25 +5119,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -5438,7 +5438,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -5512,33 +5516,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -5549,10 +5526,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -5560,6 +5547,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -5567,25 +5555,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -5873,7 +5873,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -5947,33 +5951,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -5984,10 +5961,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -5995,6 +5982,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -6002,25 +5990,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -6170,7 +6170,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -6244,33 +6248,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -6281,10 +6258,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -6292,6 +6279,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -6299,25 +6287,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -6467,7 +6467,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -6541,33 +6545,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -6578,10 +6555,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -6589,6 +6576,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -6596,25 +6584,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -6670,7 +6670,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -6744,33 +6748,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -6781,10 +6758,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -6792,6 +6779,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -6799,25 +6787,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -6873,7 +6873,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -6947,33 +6951,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -6984,10 +6961,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -6995,6 +6982,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -7002,25 +6990,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -7076,7 +7076,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -7150,33 +7154,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -7187,10 +7164,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -7198,6 +7185,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -7205,25 +7193,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -7279,7 +7279,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -7353,33 +7357,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -7390,10 +7367,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -7401,6 +7388,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -7408,31 +7396,43 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
 		Sensor/Camera/VisualizationMono/Edit/VisualizationMono_Sensor_Camera_Vars.h \
 		Sensor/Camera/VisualizationMono/Edit/VisualizationMono_Sensor_Camera_ParamsData.h \
-		../../ModuleDev/wheelchair/Sensor/Camera/SensorInternalEvent/Edit/SensorInternalEvent_Sensor_Camera_ParamsData.h \
+		../../ModuleDev/COI_ROS/Sensor/Camera/SensorInternalEvent/Edit/SensorInternalEvent_Sensor_Camera_ParamsData.h \
 		/opt/ros/indigo/include/sensor_msgs/Image.h \
 		/opt/ros/indigo/include/ros/types.h \
 		/opt/ros/indigo/include/ros/serialization.h \
@@ -7449,7 +7449,8 @@ compiler_clean: compiler_moc_header_clean
 		/opt/ros/indigo/include/ros/builtin_message_traits.h \
 		/opt/ros/indigo/include/ros/datatypes.h \
 		/opt/ros/indigo/include/ros/message_operations.h \
-		/opt/ros/indigo/include/std_msgs/Header.h
+		/opt/ros/indigo/include/std_msgs/Header.h \
+		../../ModuleDev/wheelchair/Sensor/Camera/SensorInternalEvent/Edit/SensorInternalEvent_Sensor_Camera_ParamsData.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ../../../../Build/MOD/wheelchair/OBJ/Debug/VisualizationMono_Sensor_Camera_PrivFunc.o Sensor/Camera/VisualizationMono/Edit/VisualizationMono_Sensor_Camera_PrivFunc.cpp
 
 ../../../../Build/MOD/wheelchair/OBJ/Debug/VisualizationMono_Sensor_Camera_PrivCoreFunc.o: Sensor/Camera/VisualizationMono/NoEdit/VisualizationMono_Sensor_Camera_PrivCoreFunc.cpp Sensor/Camera/VisualizationMono/NoEdit/VisualizationMono_Sensor_Camera_PrivCoreFunc.h \
@@ -7482,7 +7483,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -7556,33 +7561,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -7593,10 +7571,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -7604,6 +7592,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -7611,31 +7600,43 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
 		Sensor/Camera/VisualizationMono/Edit/VisualizationMono_Sensor_Camera_Vars.h \
 		Sensor/Camera/VisualizationMono/Edit/VisualizationMono_Sensor_Camera_ParamsData.h \
-		../../ModuleDev/wheelchair/Sensor/Camera/SensorInternalEvent/Edit/SensorInternalEvent_Sensor_Camera_ParamsData.h \
+		../../ModuleDev/COI_ROS/Sensor/Camera/SensorInternalEvent/Edit/SensorInternalEvent_Sensor_Camera_ParamsData.h \
 		/opt/ros/indigo/include/sensor_msgs/Image.h \
 		/opt/ros/indigo/include/ros/types.h \
 		/opt/ros/indigo/include/ros/serialization.h \
@@ -7652,7 +7653,8 @@ compiler_clean: compiler_moc_header_clean
 		/opt/ros/indigo/include/ros/builtin_message_traits.h \
 		/opt/ros/indigo/include/ros/datatypes.h \
 		/opt/ros/indigo/include/ros/message_operations.h \
-		/opt/ros/indigo/include/std_msgs/Header.h
+		/opt/ros/indigo/include/std_msgs/Header.h \
+		../../ModuleDev/wheelchair/Sensor/Camera/SensorInternalEvent/Edit/SensorInternalEvent_Sensor_Camera_ParamsData.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o ../../../../Build/MOD/wheelchair/OBJ/Debug/VisualizationMono_Sensor_Camera_PrivCoreFunc.o Sensor/Camera/VisualizationMono/NoEdit/VisualizationMono_Sensor_Camera_PrivCoreFunc.cpp
 
 ../../../../Build/MOD/wheelchair/OBJ/Debug/SensorInternalEvent_Sensor_Joystick_PrivFunc.o: Sensor/Joystick/SensorInternalEvent/Edit/SensorInternalEvent_Sensor_Joystick_PrivFunc.cpp Sensor/Joystick/SensorInternalEvent/NoEdit/SensorInternalEvent_Sensor_Joystick_PrivFunc.h \
@@ -7685,7 +7687,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -7759,33 +7765,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -7796,10 +7775,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -7807,6 +7796,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -7814,25 +7804,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -7982,7 +7984,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -8056,33 +8062,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -8093,10 +8072,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -8104,6 +8093,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -8111,25 +8101,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -8279,7 +8281,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -8353,33 +8359,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -8390,10 +8369,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -8401,6 +8390,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -8408,25 +8398,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -8465,7 +8467,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -8539,33 +8545,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -8576,10 +8555,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -8587,6 +8576,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -8594,25 +8584,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -8651,7 +8653,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -8725,33 +8731,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -8762,10 +8741,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -8773,6 +8762,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -8780,25 +8770,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -8837,7 +8839,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -8911,33 +8917,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -8948,10 +8927,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -8959,6 +8948,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -8966,25 +8956,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -9023,7 +9025,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -9097,33 +9103,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -9134,10 +9113,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -9145,6 +9134,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -9152,25 +9142,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -9321,7 +9323,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -9395,33 +9401,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -9432,10 +9411,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -9443,6 +9432,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -9450,25 +9440,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -9618,7 +9620,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -9692,33 +9698,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -9729,10 +9708,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -9740,6 +9729,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -9747,25 +9737,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -9821,7 +9823,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -9895,33 +9901,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -9932,10 +9911,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -9943,6 +9932,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -9950,25 +9940,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -10024,7 +10026,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -10098,33 +10104,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -10135,10 +10114,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -10146,6 +10135,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -10153,25 +10143,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -10227,7 +10229,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -10301,33 +10307,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -10338,10 +10317,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -10349,6 +10338,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -10356,25 +10346,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -10430,7 +10432,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -10504,33 +10510,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -10541,10 +10520,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -10552,6 +10541,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -10559,25 +10549,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -10633,7 +10635,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -10707,33 +10713,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -10744,10 +10723,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -10755,6 +10744,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -10762,25 +10752,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -10836,7 +10838,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -10910,33 +10916,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -10947,10 +10926,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -10958,6 +10947,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -10965,25 +10955,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -11054,7 +11056,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -11128,33 +11134,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -11165,10 +11144,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -11176,6 +11165,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -11183,25 +11173,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -11272,7 +11274,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -11346,33 +11352,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -11383,10 +11362,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -11394,6 +11383,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -11401,25 +11391,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -11686,7 +11688,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -11760,33 +11766,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -11797,10 +11776,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -11808,6 +11797,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -11815,25 +11805,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -12100,7 +12102,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -12174,33 +12180,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -12211,10 +12190,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -12222,6 +12211,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -12229,25 +12219,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -12318,7 +12320,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -12392,33 +12398,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -12429,10 +12408,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -12440,6 +12429,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -12447,25 +12437,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -12536,7 +12538,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -12610,33 +12616,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -12647,10 +12626,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -12658,6 +12647,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -12665,25 +12655,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -12754,7 +12756,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -12828,33 +12834,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -12865,10 +12844,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -12876,6 +12865,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -12883,25 +12873,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -12972,7 +12974,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -13046,33 +13052,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -13083,10 +13062,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -13094,6 +13083,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -13101,25 +13091,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -13190,7 +13192,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -13264,33 +13270,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -13301,10 +13280,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -13312,6 +13301,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -13319,25 +13309,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -13408,7 +13410,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -13482,33 +13488,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -13519,10 +13498,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -13530,6 +13519,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -13537,25 +13527,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -13859,7 +13861,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -13933,33 +13939,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -13970,10 +13949,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -13981,6 +13970,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -13988,25 +13978,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -14310,7 +14312,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -14384,33 +14390,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -14421,10 +14400,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -14432,6 +14421,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -14439,25 +14429,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -14529,7 +14531,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -14603,33 +14609,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -14640,10 +14619,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -14651,6 +14640,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -14658,25 +14648,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -14748,7 +14750,11 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qglobalstatic.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qmutex.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qnumeric.h \
-		../../Kernel/include/Core/Edge/triggerlog.h \
+		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
+		../../Kernel/include/Modules/Source/source.h \
+		../../Kernel/include/Core/Node/node.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qwindowdefs.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qobjectdefs.h \
@@ -14822,33 +14828,6 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfiledevice.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvector2d.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtouchdevice.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qdialog.h \
-		../../Kernel/include/Core/Node/node.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qmessagebox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qcoreapplication.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qeventloop.h \
@@ -14859,10 +14838,20 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdatetime.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qthread.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qreadwritelock.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
+		../../Kernel/include/Modules/Drain/drain.h \
+		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/Core/Edge/edge.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qgridlayout.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtablewidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtableview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qframe.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qabstractitemmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qitemselectionmodel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -14870,6 +14859,7 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractspinbox.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qvalidator.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qicon.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractslider.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qstyle.h \
@@ -14877,25 +14867,37 @@ compiler_clean: compiler_moc_header_clean
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtabwidget.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qrubberband.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qheaderview.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qtimer.h \
-		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qbasictimer.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qscrollarea.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qsplitter.h \
+		../../Kernel/include/Core/Edge/triggerlog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qpushbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qplaintextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qtextedit.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextdocument.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qtextlayout.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qglyphrun.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qrawfont.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qfontdatabase.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qfiledialog.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qdir.h \
+		/opt/Qt5.4.1/5.4/gcc_64/include/QtCore/qfileinfo.h \
 		../../Kernel/include/Core/Edge/triggerview.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtWidgets/qlabel.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtGui/qpainter.h \
-		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
-		../../Kernel/include/Modules/Source/source.h \
-		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
-		../../Kernel/include/Modules/Drain/drain.h \
-		../../Kernel/include/ExModules/Drain/Transmitter/transmitter.h \
 		../../Kernel/include/ExModules/Source/Simulator/simulator.h \
-		../../Kernel/include/ExModules/Source/Sensor/sensor.h \
-		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/SourceDrain/userinteract.h \
-		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/Modules/SourceDrain/sourcedrain.h \
 		../../Kernel/include/ExModules/Drain/Storage/storage.h \
+		../../Kernel/include/Modules/Processor/processor.h \
+		../../Kernel/include/ExModules/Drain/Visualization/visualization.h \
+		../../Kernel/include/ExModules/Source/UserInput/userinput.h \
 		../../Kernel/include/Accessories/XMLDomInterface/xmldominterface.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qdom.h \
 		/opt/Qt5.4.1/5.4/gcc_64/include/QtXml/qtxmlglobal.h \

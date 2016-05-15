@@ -169,7 +169,6 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
     QVector<SensorTimer_Localization_Slam_Data *> inputdata_2; copyQVector(inputdata_2,inputData[2]);
 	ProcessorMulti_Processor_FeatureExtract_Data * outputdata=(ProcessorMulti_Processor_FeatureExtract_Data *)outputData;
 	outputPortIndex=QList<int>();
-    qDebug() << "datasize" << inputdata_0.size() << inputdata_1.size();
     if(inputdata_0.size()==0){return 0;}
     if(inputdata_1.size()==0){return 0;}
 //    if(inputdata_2.size()==0){return 0;}
@@ -194,6 +193,29 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
 //    IMUy = inputdata_2.front()->y;
 //    IMUorientation = inputdata_2.front()->theta;
 
+    double IMUx_lmsl;
+    double IMUx_lmsr;
+    double IMUy_lmsl;
+    double IMUy_lmsr;
+    IMUx_lmsl = IMUx + nav_shift_f*cos(IMUorientation) - nav_shift_s*sin(IMUorientation);//*******ÕýžººÅ¿ÉÄÜÒªµ÷
+    IMUy_lmsl = IMUy + nav_shift_f*sin(IMUorientation) + nav_shift_s*cos(IMUorientation);
+    IMUx_lmsr = IMUx + nav_shift_f*cos(IMUorientation) + nav_shift_s*sin(IMUorientation);//*******ÕýžººÅ¿ÉÄÜÒªµ÷
+    IMUy_lmsr = IMUy + nav_shift_f*sin(IMUorientation) - nav_shift_s*cos(IMUorientation);
+
+    double temp_angle;
+    for (int i = 0; i < URGDataSize; i++)//lms_l
+    {
+        temp_angle = IMUorientation -(double)i / 360 * vars->Pi + vars->Pi / 2;
+        outputdata->urg_data_point[0][i][0] = ((IMUx_lmsl +cos(temp_angle)*inputdata_0.front()->ldata[i] / vars->unit) );//Ò»Ã×DEFINE_3žñ£¬³õÊŒÎ»ÖÃ£šDEFINE_4,DEFINE_4)
+        outputdata->urg_data_point[0][i][1] = ((IMUy_lmsl + sin(temp_angle)*inputdata_0.front()->ldata[i] / vars->unit) );
+    }
+
+    for (int i = 0; i < URGDataSize; i++)//lms_r
+    {
+        temp_angle = IMUorientation -(double)i / 360 * vars->Pi + vars->Pi / 2 + lms_shift_from_rlms_2_llms;
+        outputdata->urg_data_point[1][i][0] = ((IMUx_lmsr +cos(temp_angle)*inputdata_0.front()->rdata[i] / vars->unit) );//Ò»Ã×DEFINE_3žñ£¬³õÊŒÎ»ÖÃ£šDEFINE_4,DEFINE_4)
+        outputdata->urg_data_point[1][i][1] = ((IMUy_lmsr + sin(temp_angle)*inputdata_0.front()->rdata[i] / vars->unit) );
+    }
     outputdata->feature.timestamp = Qtime2time(QTime::currentTime());
 
 

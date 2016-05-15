@@ -23,7 +23,6 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
     GetParamValue(xmlloader, vars, offlineTrajecPath);
     GetParamValue(xmlloader, vars, offlineTrajecFilename);
     FILE *fp = fopen((vars->offlineTrajecPath+vars->offlineTrajecFilename).toStdString().c_str(), "r");
-
     double ox, oy, oth;
     while (fscanf(fp, "%lf %lf %lf", &ox, &oy, &oth) == 3)
     {

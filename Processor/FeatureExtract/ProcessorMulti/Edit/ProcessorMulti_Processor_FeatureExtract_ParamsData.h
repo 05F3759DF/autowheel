@@ -76,6 +76,7 @@ public:
      //Mei
      double pixelsize, ox, oy;
      const double a_big_number = 999999999.0;
+
 };
 
 //The Output Data is defined as below

@@ -40,12 +40,6 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
      vars->serialport->setStopBits(QSerialPort::OneStop);
      vars->serialport->setFlowControl(QSerialPort::NoFlowControl);
 
-     vars->leftspeed = vars->rightspeed =0;
-     vars->leftodom = vars->rightodom = 0;
-
-     vars->x = vars->y = vars->yaw = 0;
-
-     vars->theta = M_PI / 2; //初始化朝向，前方是y轴正方向，右方是x轴正方向-20150519
 
      if(!(vars->serialport->open(QIODevice::ReadWrite))) {
          return 0;
@@ -133,7 +127,6 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
          return 0;
 
      QByteArray datagram = vars->serialport->readAll();
-     QTime currenttime = QTime::currentTime();
 
      vars->current_time = ros::Time::now();
 
@@ -156,41 +149,41 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
 
              vars->leftencoder = *((short*)(tmpdata.data() + 3 * sizeof(short)));
              vars->rightencoder = *((short*)(tmpdata.data() + 4 * sizeof(short)));
+
+             vars->current_time = ros::Time::now();
              //第一次初始化数据
              if(vars->isinit)
              {
-                 vars->lastleftencoder = vars->leftencoder;
-                 vars->lastrightencoder = vars->rightencoder;
-                 vars->leftspeed = vars->rightspeed = 0;
+                 vars->leftspeed = vars->rightspeed =0;
                  vars->leftodom = vars->rightodom = 0;
+                 vars->lastleftspeed = vars->lastrightspeed = 0;
+                 vars->x = vars->y = vars->yaw = 0;
+                 vars->theta = M_PI / 2; //初始化朝向，前方是y轴正方向，右方是x轴正方向-20150519
+
                  vars->lastyaw = vars->yaw;
+                 vars->x = vars->y = vars->vx = vars->vy = vars->vtheta = 0.0;
 
-                 vars->x = vars->y  = vars->vx = vars->vy = vars->vtheta = 0.0;
-
-                 vars->current_time = ros::Time::now();
-                 vars->last_time = ros::Time::now();
-
+                 vars->last_time = vars->current_time;
                  vars->isinit = 0;
                  return 1;
              }
 
              double deltatime = (vars->current_time - vars->last_time).toSec();
-
-             vars->deltaleft = deltatime *(vars->leftencoder + vars->lastleftencoder)  / 2 * params->distPerPulse;
-             vars->leftodom += vars->deltaleft;
+             qDebug() << "time " << deltatime;
              vars->leftspeed = vars->leftencoder;
-             vars->lastleftencoder = vars->leftencoder;
+             vars->deltaleft = deltatime *(vars->leftspeed + vars->lastleftspeed)  / 2 * params->distPerPulse;
+             vars->leftodom += vars->deltaleft;
+             vars->lastleftspeed = vars->leftencoder;
 
-             vars->deltaright = deltatime *(vars->rightencoder + vars->rightencoder)  / 2 * params->distPerPulse;
-             vars->rightodom += vars->deltaright ;
              vars->rightspeed = vars->rightencoder;
-             vars->lastrightencoder = vars->rightencoder;
+             vars->deltaright = deltatime *(vars->rightspeed + vars->lastrightspeed)  / 2 * params->distPerPulse;
+             vars->rightodom += vars->deltaright ;
+             vars->lastrightspeed = vars->rightencoder;
 
              ////使用编码器计算角度
              //vars->deltaEncodertheta = (vars->deltaright-vars->deltaleft)/params->WheelBase;
              ////使用IMU计算角度
-             vars->deltaIMUtheta = -(vars->yaw - vars->lastyaw) * M_PI / 1800.0;
-
+             vars->deltaIMUtheta = -(vars->yaw - vars->lastyaw);
              vars->lastyaw = vars->yaw;
 
              ///IMU角度范围是 0~360
@@ -245,7 +238,7 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
             outputdata->y = vars->y;
             outputdata->theta = vars->theta;
             outputdata->yaw = vars->yaw;
-            outputdata->timestamp = currenttime;
+            outputdata->timestamp = QTime::currentTime();
             vars->last_time = vars->current_time;
         }
     }
@@ -253,7 +246,7 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
     {
         return 0;
     }
-
+    qDebug() << "encoder " <<vars->leftencoder << ' ' << vars->rightencoder;
     return 1;
 }
 
@@ -285,7 +278,6 @@ bool DECOFUNC(processMonoDrainData)(void * paramsPtr, void * varsPtr, QVector<vo
 	Function: process draindata.
 	*/
     ProcessorMulti_Processor_Control_Data* inputdata = draindata.front();
-
     char dataput[8];
     char data_size = 5;
     dataput[0] = params->send_packhead.at(0);
@@ -294,7 +286,6 @@ bool DECOFUNC(processMonoDrainData)(void * paramsPtr, void * varsPtr, QVector<vo
     *(short*)&dataput[4] = (short)inputdata->right_motor;
     //控制左右灯, 0 - all off; 1 - left light on; 2 - right light on; 3 - all on;
     *(short*)&dataput[6] = 0;
-
     dataput[7] = params->send_packtail.at(0);
 
     int n = vars->serialport->write(dataput, 8);

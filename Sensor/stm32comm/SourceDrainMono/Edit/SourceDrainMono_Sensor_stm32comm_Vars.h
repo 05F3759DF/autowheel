@@ -91,7 +91,8 @@ public:
 
     int quryinterval;
     double roll, pitch, yaw, lastyaw;
-    int leftencoder, rightencoder, lastleftencoder,lastrightencoder;
+    int leftencoder, rightencoder;
+    double lastleftspeed,lastrightspeed;
     double leftspeed, rightspeed, leftodom, rightodom;
     double deltaleft, deltaright, deltatheta, deltaIMUtheta, deltaEncodertheta;
 

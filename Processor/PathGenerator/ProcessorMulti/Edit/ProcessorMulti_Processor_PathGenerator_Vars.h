@@ -115,9 +115,9 @@ public:
          int index0 = index;
          while (index < traj.size() && dist2D(traj[index].x - startPoint.x, traj[index].y - startPoint.y) < distanceUsed)
              index++;
-         index = min(index, index0 + 50);
-         if (index > traj.size() - 15)
-             index = -1;
+         index = max(index, index0 + 80);
+         if (index > traj.size())
+             index = traj.size() - 1;
          return index;
      }
 };

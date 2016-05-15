@@ -35,22 +35,15 @@ void generateControlCmd(ProcessorMulti_Processor_Control_Vars* vars,
     }
     else {
         double a = hy / hx ;
-        if ( ( hx > 0 && (a*vec_x - vec_y) < 0 ) || ( hx < 0 && (a*vec_x - vec_y) > 0 ) )
-            sin_theta = -1*sin_theta ;
+        if ( ( hx > 0 && (a * vec_x - vec_y) < 0 ) || ( hx < 0 && (a * vec_x - vec_y) > 0 ) )
+            sin_theta = -1 * sin_theta ;
     }
 
-    double d = sqrt(vec_x*vec_x+vec_y*vec_y + 1e-10);
+    double d = sqrt(vec_x * vec_x + vec_y * vec_y + 1e-10);
+    double curvature = 2 * sin_theta / d;
 
-//    if(d < 0.8)
-//    {//已到达
-//        vars->left_vel = vars->right_vel = 0;
-//        return;
-//    }
+    double angularVel = vars->targetSpeed * curvature * vars->KpAngle; //4.5 ok
 
-    double curvature = 2*sin_theta/d;
-
-    double angularVel = vars->targetSpeed*curvature*vars->KpAngle; //4.5 ok
-
-    vars->left_vel = vars->targetSpeed + angularVel*vars->WheelBase/2;
-    vars->right_vel = vars->targetSpeed - angularVel*vars->WheelBase/2;
+    vars->left_vel = vars->targetSpeed + angularVel * vars->WheelBase / 2;
+    vars->right_vel = vars->targetSpeed - angularVel * vars->WheelBase / 2;
 }
