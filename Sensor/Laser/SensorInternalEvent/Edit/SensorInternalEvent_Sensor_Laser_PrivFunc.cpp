@@ -99,6 +99,7 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
 	*/
     outputdata->qtimestamp = QTime::currentTime();
     sensor_msgs::LaserScan  llaserData ;
+    sensor_msgs::LaserScan  rlaserData ;
     //left laser data, ROS提供的SLAM接口只支持标准的Laser输入，所以这里只使用左激光，并且去除了遮挡部分
     if(vars->llaser_on)
     {
@@ -109,26 +110,19 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
         //outputdata->qtimestamp = QTime::fromMSecsSinceStartOfDay(msec);
         outputdata->timestamp = msec;
         outputdata->datasize = llaserData.ranges.size();
-
-        int occupyAngle = 50; //70度的遮挡
-        //vars->currentllaserData = llaserData;
-        int ii = 0;
+        int occupyAngle = 65;
         for(int i=0; i< outputdata->datasize; i++)
         {
             outputdata->ldata[i] = qRound(llaserData.ranges[i]*100.0);
-            if(outputdata->ldata[i] < 5)
-                outputdata->ldata[i] = 3000;
             //去遮挡
-            if(i>(outputdata->datasize - occupyAngle*2) && i< outputdata->datasize)
+            if(i>(outputdata->datasize - occupyAngle * 2) && i < outputdata->datasize)
             {
-                if(llaserData.ranges[i]<0.15)
+                if(outputdata->ldata[i] < 0.2)
                 {
-                    llaserData.ranges[i] = 0.0;
-                    ii++;
+                    outputdata->ldata[i] = 0.0;
                 }
             }
         }
-        //std::cout<<ii<<std::endl;
         double temp;
         for(int i=0; i< outputdata->datasize/2; i++)
         {//翻转激光
@@ -139,23 +133,29 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
         vars->laserPub->sendMessage(llaserData);
     }
     //right laser data
-
-    sensor_msgs::LaserScanConstPtr  laserPtr ;
     if(vars->rlaser_on)
     {
-        laserPtr = vars->rLaserSub->getMessage();
-        if(laserPtr == NULL)
+        rlaserData = vars->rLaserSub->getMessage();
+        if(rlaserData.ranges.size() == 0)
             return 0;
-        int msec=(laserPtr->header.stamp.sec)%(24*60*60)*1000+(laserPtr->header.stamp.nsec)/1000000;
+        int msec=(rlaserData.header.stamp.sec)%(24*60*60)*1000+(rlaserData.header.stamp.nsec)/1000000;
         //outputdata->qtimestamp = QTime::fromMSecsSinceStartOfDay(msec);
         outputdata->timestamp = msec;
-        outputdata->datasize = laserPtr->ranges.size();
+        outputdata->datasize = rlaserData.ranges.size();
+        int occupyAngle = 65;
+
         for(int i=0; i< outputdata->datasize; i++)
         {
-            outputdata->rdata[i] = qRound(laserPtr->ranges[i]*100.0);
-            if(outputdata->rdata[i] < 5)
-                outputdata->rdata[i] = 3000;
+            outputdata->rdata[i] = qRound(rlaserData.ranges[i]*100.0);
+            if(i>(outputdata->datasize - occupyAngle * 2) && i< outputdata->datasize)
+            {
+                if(outputdata->rdata[i]<0.2)
+                {
+                    outputdata->rdata[i] = 0.0;
+                }
+            }
         }
+        vars->laserPub->sendMessage(rlaserData);
     }
 	return 1;
 }

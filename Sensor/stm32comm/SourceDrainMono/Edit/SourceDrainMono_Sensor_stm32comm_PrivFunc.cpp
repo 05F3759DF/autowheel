@@ -157,7 +157,7 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
                  vars->leftspeed = vars->rightspeed =0;
                  vars->leftodom = vars->rightodom = 0;
                  vars->lastleftspeed = vars->lastrightspeed = 0;
-                 vars->x = vars->y = vars->yaw = 0;
+                 vars->x = vars->y = 0;
                  vars->theta = M_PI / 2; //初始化朝向，前方是y轴正方向，右方是x轴正方向-20150519
 
                  vars->lastyaw = vars->yaw;
@@ -165,11 +165,10 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
 
                  vars->last_time = vars->current_time;
                  vars->isinit = 0;
-                 return 1;
+                 return 0;
              }
 
              double deltatime = (vars->current_time - vars->last_time).toSec();
-             qDebug() << "time " << deltatime;
              vars->leftspeed = vars->leftencoder;
              vars->deltaleft = deltatime *(vars->leftspeed + vars->lastleftspeed)  / 2 * params->distPerPulse;
              vars->leftodom += vars->deltaleft;
@@ -246,7 +245,6 @@ bool DECOFUNC(generateSourceData)(void * paramsPtr, void * varsPtr, void * outpu
     {
         return 0;
     }
-    qDebug() << "encoder " <<vars->leftencoder << ' ' << vars->rightencoder;
     return 1;
 }
 

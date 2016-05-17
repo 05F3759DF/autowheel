@@ -42,13 +42,15 @@ public:
 	{
         llaser_on = rlaser_on = 1;
 
-        lLaserTopic = "LLaser/scan";
         queuesize = 100;
+
         quryinterval = 50;
+
+        lLaserTopic = "LLaser/scan";
         lLaserSub = new ROSSub<sensor_msgs::LaserScan>(lLaserTopic, queuesize, quryinterval);
 
         rLaserTopic = "RLaser/scan";
-        rLaserSub = new ROSSub<sensor_msgs::LaserScanPtr>(rLaserTopic, queuesize, quryinterval);
+        rLaserSub = new ROSSub<sensor_msgs::LaserScan>(rLaserTopic, queuesize, quryinterval);
 
         laserPubTopic = "/MyLaserPub";
         laserPub = new ROSPub<sensor_msgs::LaserScan>(laserPubTopic, 100, "LaserPub");
@@ -78,7 +80,7 @@ public:
     u_int32_t queuesize;
     int quryinterval;
     ROSSub<sensor_msgs::LaserScan>* lLaserSub;
-    ROSSub<sensor_msgs::LaserScanPtr>* rLaserSub;
+    ROSSub<sensor_msgs::LaserScan>* rLaserSub;
     ROSPub<sensor_msgs::LaserScan>* laserPub;
 
     sensor_msgs::LaserScan currentLaserPtr;

@@ -15,6 +15,10 @@ inline double getTheta(double x1, double y1, double x2, double y2)
     return theta;
 }
 
+inline double getDistance(double x1, double y1, double x2, double y2) {
+    return sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+}
+
 bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeType, QString qstrNodeClass, QString qstrNodeName, void * paramsPtr, void * varsPtr)
 {
     XMLDomInterface xmlloader(qstrConfigName,qstrNodeType,qstrNodeClass,qstrNodeName);
@@ -65,20 +69,26 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
 
     for (int i = 1; i < vars->taskPoint.size(); i++)
     {
-//        double dist = dist2D(vars->taskPoint[i - 1].x - vars->taskPoint[i].x,
-//                vars->taskPoint[i - 1].y - vars->taskPoint[i].y);
-//        double pd = 0.3;
-//        double ptheta = getTheta(vars->taskPoint[i - 1].x, vars->taskPoint[i - 1].y,
-//                vars->taskPoint[i].x, vars->taskPoint[i].y);
-//        while (pd < dist - 0.01)
-//        {
-//            trajec_state tmpPoint;
-//            tmpPoint.x = vars->taskPoint[i - 1].x + pd / dist * (vars->taskPoint[i].x - vars->taskPoint[i - 1].x);
-//            tmpPoint.y = vars->taskPoint[i - 1].y + pd / dist * (vars->taskPoint[i].y - vars->taskPoint[i - 1].y);
-//            tmpPoint.theta = ptheta;
-//            vars->pointList.push_back(tmpPoint);
-//            pd += 0.1;
-//        }
+        double dist = dist2D(vars->taskPoint[i - 1].x - vars->taskPoint[i].x,
+                vars->taskPoint[i - 1].y - vars->taskPoint[i].y);
+        if (dist < 0.1) {
+            vars->pointList.push_back(vars->taskPoint[i]);
+            continue;
+        }
+        double pd = 0.1;
+        double ptheta = getTheta(vars->taskPoint[i - 1].x, vars->taskPoint[i - 1].y,
+                vars->taskPoint[i].x, vars->taskPoint[i].y);
+        double dx = vars->taskPoint[i].x - vars->taskPoint[i - 1].x;
+        double dy = vars->taskPoint[i].y - vars->taskPoint[i - 1].y;
+        while (pd <= dist - 0.1)
+        {
+            trajec_state tmpPoint;
+            tmpPoint.x = vars->taskPoint[i - 1].x + pd / dist * dx;
+            tmpPoint.y = vars->taskPoint[i - 1].y + pd / dist * dy;
+            tmpPoint.theta = ptheta;
+            vars->pointList.push_back(tmpPoint);
+            pd += 0.1;
+        }
         vars->pointList.push_back(vars->taskPoint[i]);
     }
 
@@ -111,7 +121,7 @@ void DECOFUNC(getInternalTrigger)(void * paramsPtr, void * varsPtr, QObject * & 
     /*
     Function: get internal trigger [defined in vars] for node.
     You need to program here when you need internal trigger (internalTrigger + internalTriggerSignal) for node.
-    E.g.
+    E.g.lLaserPointx
     internalTrigger=&(vars->trigger);
     internalTriggerSignal=QString(SIGNAL(triggerSignal()));
     */
@@ -177,6 +187,8 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
     trajec_state endState = {0, 3, PI / 2 , 0};
     double x, y, theta;
     outputdata->front_barrier.clear();
+
+
     if(vars->stopPlanning)
     {
         x = y = 0;
@@ -187,7 +199,6 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
         x = outputdata->startPoint.x = inputdata_0.front()->x;
         y = outputdata->startPoint.y = inputdata_0.front()->y;
         theta = outputdata->startPoint.theta = inputdata_0.front()->theta;
-
         outputdata->angle = theta;
         outputdata->pointList = vars->pointList;
 
@@ -267,9 +278,89 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
             }
             outputdata->trajSets.push_back(tmp);
         }
+
+        outputdata->URGData_size = evaluate->URGData_size;
+        for(int i = 0; i < 2; i++)
+        {
+            for(int j = 0; j < evaluate->URGData_size; j++)
+            {
+                outputdata->urg_data_point[i][j][0] = evaluate->urg_data_point[i][j][0];
+                outputdata->urg_data_point[i][j][1] = evaluate->urg_data_point[i][j][1];
+                outputdata->urg_valid[i][j] = evaluate->urg_valid[i][j];
+            }
+        }
+
         if (outputdata->trajSets.size() == 0 || outputdata->trajSets[outputdata->index].trajdat.size() == 0) {
             return 1;
         }
+
+        bool flag = false;
+        int obNum = 0;
+        double r = 0.3;
+        int maxObNum = 10;
+        for (int i = 0; i < evaluate->URGData_size; i++) {
+            double lLaserPointx = evaluate->urg_data_point[0][i][0];
+            double lLaserPointy = evaluate->urg_data_point[0][i][1];
+            double rLaserPointx = evaluate->urg_data_point[1][i][0];
+            double rLaserPointy = evaluate->urg_data_point[1][i][1];
+            for (int k = 0; k < outputdata->trajSets[outputdata->index].trajdat.size(); k++) {
+                double cTrajPointx = outputdata->trajSets[outputdata->index].trajdat[k].x;
+                double cTrajPointy = outputdata->trajSets[outputdata->index].trajdat[k].y;
+                if (evaluate->urg_valid[0][i] && getDistance(lLaserPointx, lLaserPointy, cTrajPointx, cTrajPointy) < r) {
+                    obNum++;
+                }
+                if (evaluate->urg_valid[1][i] && getDistance(rLaserPointx, rLaserPointy, cTrajPointx, cTrajPointy) < r) {
+                    obNum++;
+                }
+            }
+            if (obNum > maxObNum) {
+                flag = true;
+                break;
+            }
+        }
+
+        if (flag) {
+            int sig[2] = {-1, 1};
+            for (int m = 0; m < 2; m++) {
+                for (int j = 1; j < params->trajNum; j++) {
+                    int currentIndex = outputdata->index + sig[m] * j;
+                    obNum = 0;
+                    for (int i = 0; i < evaluate->URGData_size; i++) {
+                        double lLaserPointx = evaluate->urg_data_point[0][i][0];
+                        double lLaserPointy = evaluate->urg_data_point[0][i][1];
+                        double rLaserPointx = evaluate->urg_data_point[1][i][0];
+                        double rLaserPointy = evaluate->urg_data_point[1][i][1];
+                        for (int k = 0; k < outputdata->trajSets[currentIndex].trajdat.size(); k++) {
+                            double cTrajPointx = outputdata->trajSets[currentIndex].trajdat[k].x;
+                            double cTrajPointy = outputdata->trajSets[currentIndex].trajdat[k].y;
+                            if (evaluate->urg_valid[0][i] && getDistance(lLaserPointx, lLaserPointy, cTrajPointx, cTrajPointy) < r) {
+                                obNum++;
+                            }
+                            if (evaluate->urg_valid[1][i] && getDistance(rLaserPointx, rLaserPointy, cTrajPointx, cTrajPointy) < r) {
+                                obNum++;
+                            }
+                        }
+                        if (obNum > maxObNum) {
+                            break;
+                        }
+                    }
+                    if (obNum < maxObNum) {
+                        outputdata->index = currentIndex;
+                        flag = false;
+                        break;
+                    }
+                }
+                if (!flag) {
+                    break;
+                }
+            }
+        }
+
+        if (flag) {
+            outputdata->stop = true;
+            return 1;
+        }
+
         //获得预瞄点
         int preIndex = vars->getIndex(outputdata->startPoint, outputdata->trajSets[outputdata->index].trajdat);
         outputdata->targetPoint = outputdata->trajSets[outputdata->index].trajdat[preIndex];
@@ -287,9 +378,7 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
         }
     }
 
-    //如果到左右墙的距离小于3m
-//    if((evaluate->d2leftwall+evaluate->d2rightwall) < 2)
-//        outputdata->speedState = outputdata->LOW;
+
     return 1;
 }
 

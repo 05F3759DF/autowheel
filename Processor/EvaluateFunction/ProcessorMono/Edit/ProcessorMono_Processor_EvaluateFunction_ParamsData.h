@@ -102,6 +102,8 @@ public:
 
     ///0617 Mei, 以下变量是为了把FeatureExtract模块的数据传到PathGenerator
     double urg_data_point[2][600][2];
+    bool urg_valid[2][600];
+
     int is_door_open[SIZE_OF_FEATURE/2];
     double URGData_size;
     QVector<cv::Point2d> door_point;

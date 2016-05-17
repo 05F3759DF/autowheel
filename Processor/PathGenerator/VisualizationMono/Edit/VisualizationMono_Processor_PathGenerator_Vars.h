@@ -42,12 +42,18 @@ public:
 
         indexLabel = new QLabel();
         glviewer = new GLViewer();
-        shownum = 5;
-        glviewer->makeCurrent();
+        shownum = 1;
         glviewer->setBackground(QColor(222,222,222));
 
         offlineTrajecPath = "./";
         offlineTrajecFilename = "line.txt";
+
+        offsetx = offsety = 800;
+        for (int i = 0; i < 1600; i++) {
+            for (int j = 0; j < 1600; j++) {
+                map[i][j] = 0;
+            }
+        }
 	}
 	/*! \fn ~VisualizationMono_Processor_PathGenerator_Vars()
 		\brief The destructor of VisualizationMono_Processor_PathGenerator_Vars. [required]
@@ -72,9 +78,11 @@ public:
     QVector<trajec_state> offlinetrajec;
 
     QVector<cv::Point2d> onlinetrajec;
-    cv::Point2d currentposition,lastposition;
+    cv::Point2f currentposition, lastPos;
 
     QLabel *indexLabel;
+    int map[1600][1600];
+    int offsetx, offsety;
 };
 
 /*! @}*/ 

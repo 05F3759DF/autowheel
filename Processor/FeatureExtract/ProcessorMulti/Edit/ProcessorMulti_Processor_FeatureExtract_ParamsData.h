@@ -109,6 +109,7 @@ public:
 public:
 	//*******************Please add variables below*******************
     double urg_data_point[2][600][2];
+    bool urg_valid[2][600];
     _feature feature;
     int is_door_open[SIZE_OF_FEATURE/2];
     cv::Mat mapImage;

@@ -153,6 +153,11 @@ public:
     double angle;
 
     int newColor;
+
+    double URGData_size;
+    double urg_data_point[2][600][2];
+    bool urg_valid[2][600];
+
 };
 
 /*! \def ProcessorMulti_Processor_PathGenerator_OUTPUTPORTSNUMBER

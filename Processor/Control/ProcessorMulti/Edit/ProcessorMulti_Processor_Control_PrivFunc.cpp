@@ -35,6 +35,7 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
     GetParamValue(xmlloader, vars, storagepath);
 
     GetParamValue(xmlloader, vars, speedAccplus);
+    GetParamValue(xmlloader, vars, speedAccminus);
 
     vars->lowSpeedThresh = vars->highSpeedThresh = params->lowSpeed;
     vars->assignedSpeed = 0;
@@ -147,8 +148,8 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
     {
         vars->left_vel = joystickdata->linear_vel + vars->WheelBase * joystickdata->angular_vel / 2;
         vars->right_vel = joystickdata->linear_vel - vars->WheelBase * joystickdata->angular_vel / 2;
-        left_motor = vars->left_vel * 20;
-        right_motor = vars->right_vel * 20;
+        left_motor = vars->left_vel * 30;
+        right_motor = vars->right_vel * 30;
         outputdata->left_vel = vars->left_vel;
         outputdata->right_vel = vars->right_vel;
         outputdata->left_motor = left_motor;
@@ -161,7 +162,6 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
         ProcessorMulti_Processor_PathGenerator_Data* pathdata = inputdata_0.front();
         if(pathdata->stop == 1)
         {
-
             vars->left_vel-=vars->speedAccminus;
             vars->right_vel -=vars->speedAccminus;
             if (vars->left_vel<0||vars->right_vel)

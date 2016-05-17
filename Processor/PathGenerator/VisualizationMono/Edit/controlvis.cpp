@@ -5,7 +5,7 @@
 #include <Eigen/Dense>
 void drawWheelchair(const trajec_state& currentPos)
 {
-    double wheelbase = 0.64, borderWidth=1.0, borderHeight=1.4;
+    double wheelbase = 0.6, borderWidth=0.8, borderHeight=0.9;
     double wheelRadius = 0.3, carLength = 1;
 
     Eigen::Vector2d leftup(-borderWidth/2, borderHeight);
@@ -69,9 +69,6 @@ void drawWheelchair(const trajec_state& currentPos)
         glColor3f(1,0,0);
         glVertex3f(currentPos.x, currentPos.y, 0);//draw current position
     glEnd();
-
-
-
 
 
 }

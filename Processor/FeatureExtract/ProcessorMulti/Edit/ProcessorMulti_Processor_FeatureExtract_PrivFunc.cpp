@@ -202,12 +202,14 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
     IMUx_lmsr = IMUx + nav_shift_f*cos(IMUorientation) + nav_shift_s*sin(IMUorientation);//*******ÕýžººÅ¿ÉÄÜÒªµ÷
     IMUy_lmsr = IMUy + nav_shift_f*sin(IMUorientation) - nav_shift_s*cos(IMUorientation);
 
+    cout << "laser " << IMUx_lmsl << ' ' << IMUy_lmsl << endl;
     double temp_angle;
     for (int i = 0; i < URGDataSize; i++)//lms_l
     {
         temp_angle = IMUorientation -(double)i / 360 * vars->Pi + vars->Pi / 2;
         outputdata->urg_data_point[0][i][0] = ((IMUx_lmsl +cos(temp_angle)*inputdata_0.front()->ldata[i] / vars->unit) );//Ò»Ã×DEFINE_3žñ£¬³õÊŒÎ»ÖÃ£šDEFINE_4,DEFINE_4)
         outputdata->urg_data_point[0][i][1] = ((IMUy_lmsl + sin(temp_angle)*inputdata_0.front()->ldata[i] / vars->unit) );
+        outputdata->urg_valid[0][i] = (inputdata_0.front()->ldata[i] > 20);
     }
 
     for (int i = 0; i < URGDataSize; i++)//lms_r
@@ -215,6 +217,7 @@ bool DECOFUNC(processMultiInputData)(void * paramsPtr, void * varsPtr, QVector<Q
         temp_angle = IMUorientation -(double)i / 360 * vars->Pi + vars->Pi / 2 + lms_shift_from_rlms_2_llms;
         outputdata->urg_data_point[1][i][0] = ((IMUx_lmsr +cos(temp_angle)*inputdata_0.front()->rdata[i] / vars->unit) );//Ò»Ã×DEFINE_3žñ£¬³õÊŒÎ»ÖÃ£šDEFINE_4,DEFINE_4)
         outputdata->urg_data_point[1][i][1] = ((IMUy_lmsr + sin(temp_angle)*inputdata_0.front()->rdata[i] / vars->unit) );
+        outputdata->urg_valid[1][i] = (inputdata_0.front()->rdata[i] > 20);
     }
     outputdata->feature.timestamp = Qtime2time(QTime::currentTime());
 

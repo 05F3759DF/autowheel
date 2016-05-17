@@ -134,6 +134,7 @@ bool DECOFUNC(processMonoInputData)(void * paramsPtr, void * varsPtr, QVector<vo
         {
             outputdata->urg_data_point[i][j][0] = feature->urg_data_point[i][j][0];
             outputdata->urg_data_point[i][j][1] = feature->urg_data_point[i][j][1];
+            outputdata->urg_valid[i][j] = feature->urg_valid[i][j];
         }
     }
     return 1;

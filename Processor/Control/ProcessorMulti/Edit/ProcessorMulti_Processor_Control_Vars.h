@@ -48,7 +48,7 @@ public:
         isSaveTraj = 0;
         storagepath = "./";
 
-       targetSpeed= lastSpeed = lowSpeedThresh = highSpeedThresh = 0;
+        targetSpeed= lastSpeed = lowSpeedThresh = highSpeedThresh = 0;
 
         speedAccplus = 0.02;
         speedAccminus=0.01;

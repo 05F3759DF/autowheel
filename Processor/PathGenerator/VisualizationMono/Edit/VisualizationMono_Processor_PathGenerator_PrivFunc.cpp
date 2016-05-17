@@ -39,7 +39,7 @@ bool DECOFUNC(setParamsVarsOpenNode)(QString qstrConfigName, QString qstrNodeTyp
     int i;
     for(i=0; i<vars->shownum; i++)
         vars->glviewer->addDisplayList(vars->displaylistbase + i);
-    vars->lastposition.x = vars->lastposition.y = 0;
+    vars->lastPos.x = vars->lastPos.y = 0;
 
 	return 1;
 }
@@ -104,41 +104,74 @@ bool DECOFUNC(processMonoDrainData)(void * paramsPtr, void * varsPtr, QVector<vo
 	*/
     ProcessorMulti_Processor_PathGenerator_Data* drawdata = draindata.front();
 
-    if (drawdata->stop == 1)
-    {
-        return 0;
-    }
-
     vars->indexLabel->setText(QString::number(drawdata->index) + " " + QString::number(drawdata->timestamp));
     glNewList(vars->displaylistbase,GL_COMPILE_AND_EXECUTE);
+    glTranslatef(0, 0, -10);
 
     drawWheelchair(drawdata->startPoint);
 
 
-    glColor3f(0, 1, 0);
+    //draw offline trajectory
     glLineWidth(1);
-    for(int i=0; i<drawdata->trajSets.size();i++)
-    {
-        glBegin(GL_LINE_STRIP);
-        for(int j=0; j<drawdata->trajSets[i].trajdat.size(); j++)
-        {
-            glVertex3f(drawdata->trajSets[i].trajdat[j].x, drawdata->trajSets[i].trajdat[j].y, 0);
-        }
-        glEnd();
-    }
-
-    glLineWidth(3);
-    glColor3f(1, 0, 0);
+    glColor3f(0.6,0.6,0);
     glBegin(GL_LINE_STRIP);
-    for(int i=0; i<drawdata->trajSets[drawdata->index].trajdat.size(); i++)
+    for(int i=0; i<vars->offlinetrajec.size(); i++)
     {
-        glVertex3f(drawdata->trajSets[drawdata->index].trajdat[i].x, drawdata->trajSets[drawdata->index].trajdat[i].y, 0);
+        glVertex3f(vars->offlinetrajec[i].x, vars->offlinetrajec[i].y, 0);
     }
     glEnd();
 
+    //draw map
+    glColor3f(0, 0, 0);
+    glPointSize(1);
+    glBegin(GL_POINTS);
+    for (int i = 0; i < 1600; i++) {
+        for (int j = 0; j < 1600; j++) {
+            if (vars->map[i][j] > 0) {
+                glVertex3f((i - vars->offsetx) / 10.0, (j - vars->offsety) / 10.0, 0);
+            }
+        }
+    }
+    glEnd();
+
+    //  laser point
+    glColor3f(1, 0, 0);
+    glPointSize(1.5);
+    glBegin(GL_POINTS);
+    cout << drawdata->URGData_size << endl;
+    for (int i = 0; i < drawdata->URGData_size; i++) {
+        if (drawdata->urg_valid[0][i]) {
+            double lx = drawdata->urg_data_point[0][i][0];
+            double ly = drawdata->urg_data_point[0][i][1];
+            glVertex3f(lx, ly, 0);
+        }
+        if (drawdata->urg_valid[1][i]) {
+            double rx = drawdata->urg_data_point[1][i][0];
+            double ry = drawdata->urg_data_point[1][i][1];
+            glVertex3f(rx, ry, 0);
+        }
+    }
+    glEnd();
+
+    for (int i = 0; i < drawdata->URGData_size; i++) {
+        if (drawdata->urg_valid[0][i]) {
+            double lx = drawdata->urg_data_point[0][i][0];
+            double ly = drawdata->urg_data_point[0][i][1];
+            int gridx = int(lx * 10);
+            int gridy = int(ly * 10);
+            vars->map[gridx + vars->offsetx][gridy + vars->offsety] = 1;
+        }
+        if (drawdata->urg_valid[1][i]) {
+            double rx = drawdata->urg_data_point[1][i][0];
+            double ry = drawdata->urg_data_point[1][i][1];
+            int gridx = int(rx * 10);
+            int gridy = int(ry * 10);
+            vars->map[gridx + vars->offsetx][gridy + vars->offsety] = 1;
+        }
+    }
 
     //draw online trajectory
-    if(dist(drawdata->startPoint.x,drawdata->startPoint.y, vars->lastposition.x, vars->lastposition.y)>1e-4)
+    if(dist(drawdata->startPoint.x,drawdata->startPoint.y, vars->lastPos.x, vars->lastPos.y)>1e-4)
     {
         vars->onlinetrajec.push_back(cv::Point2d(drawdata->startPoint.x,drawdata->startPoint.y));
     }
@@ -151,43 +184,60 @@ bool DECOFUNC(processMonoDrainData)(void * paramsPtr, void * varsPtr, QVector<vo
     }
     glEnd();
 
+    if (!drawdata->stop) {
 
-    //draw target point
-    glPointSize(6);
-    glColor3f(0,0.3,0);
-    glBegin(GL_POINTS);
-    glVertex3f(drawdata->targetPoint.x,
-            drawdata->targetPoint.y, 0);
-    glEnd();
+        glColor3f(0, 1, 0);
+        glLineWidth(1);
+        for(int i=0; i < drawdata->trajSets.size();i++)
+        {
+            glBegin(GL_LINE_STRIP);
+            for(int j=0; j < drawdata->trajSets[i].trajdat.size(); j++)
+            {
+                glVertex3f(drawdata->trajSets[i].trajdat[j].x, drawdata->trajSets[i].trajdat[j].y, 0);
+            }
+            glEnd();
+        }
 
-    //draw offline trajectory
-    glLineWidth(1);
-    glColor3f(0.6,0.6,0);
-    glBegin(GL_LINE_STRIP);
-    for(int i=0; i<vars->offlinetrajec.size(); i++)
-    {
-        glVertex3f(vars->offlinetrajec[i].x, vars->offlinetrajec[i].y, 0);
+        glLineWidth(3);
+        if (drawdata->trajSets[drawdata->index].valid) {
+            glColor3f(1, 0, 0);
+        } else {
+            glColor3f(0, 0, 0);
+        }
+        glBegin(GL_LINE_STRIP);
+        for(int i=0; i<drawdata->trajSets[drawdata->index].trajdat.size(); i++)
+        {
+            glVertex3f(drawdata->trajSets[drawdata->index].trajdat[i].x, drawdata->trajSets[drawdata->index].trajdat[i].y, 0);
+        }
+        glEnd();
+
+        //draw target point
+//        glPointSize(6);
+//        glColor3f(0,0.3,0);
+//        glBegin(GL_POINTS);
+//        glVertex3f(drawdata->targetPoint.x, drawdata->targetPoint.y, 0);
+//        glEnd();
     }
-    glEnd();
 
     glEndList();
 
 
     Eigen::Matrix4d CameraPos = vars->glviewer->getCameraPose();
-    //ŒÆËãÆ«²î
-    double dx = drawdata->startPoint.x - vars->lastposition.x;
-    double dy = drawdata->startPoint.y - vars->lastposition.y;
-    //double dyaw = drawdata->startpoint.yaw - vars->lastposition.yaw;
-    //±£Žæµ±Ç°SLAMÊýŸÝ
-    vars->lastposition =cv::Point2d(drawdata->startPoint.x, drawdata->startPoint.y);//drawdata->startpoint;
 
+    double dx = drawdata->startPoint.x - vars->lastPos.x;
+    double dy = drawdata->startPoint.y  - vars->lastPos.y;
+
+
+    vars->lastPos = cv::Point2f(drawdata->startPoint.x, drawdata->startPoint.y);
+
+    cout << dx << ' ' << dy << endl;
     CameraPos(0,3) += dx;
     CameraPos(1,3) += dy;
-    //CameraPos.block<3,3>(0,0) = CameraPos.block<3,3>(0,0)*Eigen::AngleAxisd(dyaw, Eigen::Vector3d::UnitZ());
 
     vars->glviewer->setCameraPose(CameraPos);
-    vars->glviewer->makeCurrent();
-    vars->glviewer->updateGL();
+
+//    vars->glviewer->makeCurrent();
+    vars->glviewer->update();
 	return 1;
 }
 
